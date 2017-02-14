@@ -1,1 +1,757 @@
 
+/* GENERAL ------------------------------------------------------------*/
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+
+
+
+.clearfix{ clear:both; }
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+#homepic-holder{
+		background: url('http://renegadehealth.com/blog/wp-content/uploads/2015/09/Fridge-Drawers.jpg') no-repeat 0px 0px;
+margin-bottom: 50px;
+}
+
+
+.wrapper{
+	margin: 0 auto; 
+	position: relative;
+
+}
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+
+
+
+body p{
+	margin-bottom: 10px;
+}
+
+body a{
+	text-decoration: none;
+	
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+
+
+#logo{
+	display: inline-block;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+#logo:hover{ opacity: 0.8;}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+	font-weight: 400;
+}
+
+h1{ font-size: 48px;}
+
+h2{ font-size: 36px; }
+
+h3{ font-size: 24px; }
+
+h4{ font-size: 21px; }
+
+h5{ font-size: 18px; }
+
+h6{ font-size: 14px; }
+
+#main,
+footer,
+aside{ line-height: 1.5em; }
+
+
+.wrapper {
+	width: 940px;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+
+.right:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+#top-widget-holder,
+footer,
+aside{
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+
+
+
+
+/* COMBO NAVIGATION ------------------------------------------------------------*/
+#comboNav {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+/* NAVIGATION ------------------------------------------------------------*/
+
+
+nav{
+	margin-top: 0px;
+	height: 30px;
+}
+
+
+nav a{
+	text-decoration: none;
+}
+
+#nav li{
+	margin-right: 20px;
+}
+
+#nav>li>a{
+	font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	display: block;
+	overflow: hidden;
+	padding: 0px 0px 7px 0px;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+	 cursor: pointer;
+}
+
+
+#nav>li.current-menu-item>a,
+#nav>li.current_page_item>a{
+	border-bottom: solid #ebebe8 5px;
+}
+
+
+
+
+
+
+/* HOME ------------------------------------------------------------*/
+
+.home-block{
+	margin-bottom: 20px;
+}
+
+.home-block-heading{
+	text-align: center;
+	margin-bottom: 40px;
+	background: url(../img/div-line.png) repeat-x center center;
+}
+
+.home-block-heading span{
+	padding: 0px 20px;
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+.home-block figure{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	line-height: 1.2em;
+	
+	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,.2); 
+    -moz-box-shadow: 0px 0px 2px rgba(0,0,0,.2);
+    -o-box-shadow: 0px 0px 2px rgba(0,0,0,.2);
+    box-shadow: 0px 0px 2px rgba(0,0,0,.2);
+}
+
+.home-block figure .thumb{
+	display: block;
+	
+}
+
+
+.home-block figure img{
+	max-width: 100%;
+	opacity: .999;
+		
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.home-block figure a:hover img{
+	opacity: 0.1;
+	line-height: 0em;
+	 cursor: pointer;
+}
+
+
+.home-block figure.last{
+	margin-right: 0px;
+}
+
+.home-block figcaption{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* modernizr fix for ie 8 and earlier */
+
+.no-opacity .home-block figcaption{
+	display: none;
+}
+
+.no-opacity .home-block figure:hover figcaption{
+	display: block;
+}
+
+.home-block figure .opener{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+}
+
+.opacity .home-block figure .opener{ display: none; }
+
+.home-block figcaption strong,
+.home-block figcaption span,
+.home-block figcaption em{
+	display: block;
+	margin-left: 17px;
+	margin-right: 17px;
+}
+
+.home-block figcaption strong{ 
+	font-weight: bold;
+	line-height: 1.3em;
+	margin-bottom: 7px;
+	margin-top: 17px;
+}
+
+.home-block figcaption span{ 
+	font-size: 11px;
+	margin-bottom: 7px;
+}
+
+.home-block figcaption em{ 
+	font-size: 11px;
+	font-weight: bold;
+	font-style: normal;
+	position: absolute;
+	bottom: 10px;
+}
+
+.home-block figcaption em{ font-weight: bold; }
+
+.one-third-thumbs figure{ width: 300px; }
+
+.one-fourth-thumbs figure{ width: 220px; }
+
+.more-link{
+	margin-bottom: 0px;
+	 cursor: pointer;
+}
+
+/* MAIN ------------------------------------------------------------*/
+
+#main{
+	padding-top: 40px;
+	background: url(../img/oblique-lines.png) repeat-x;
+	margin-bottom: 60px;
+}
+
+
+
+
+
+
+/* RECIPE ------------------------------------------------------------*/
+
+
+table, td, th
+{
+
+  text-align: center;
+border:1px solid lightskyblue;
+height:50px;
+width:40em;
+}
+th
+{
+background-color:lightskyblue;
+color:white;
+
+}
+.title{
+  text-align: left;
+	font-size: 3em;
+	font-family: "Times MS";
+	font-weight: 500;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.imgresponsive{
+	margin-left:auto;
+  	margin-right:auto;
+	background-color:white;
+	width:600px;
+	height:400px;
+	border-radius: 10px;
+	align:center;
+}  
+
+
+
+
+/* PAGE NAVIGATION ------------------------------------------------------------*/
+
+.page-navigation{
+	display: block;
+	margin-left: 160px;
+	margin-bottom: 0px;
+}
+
+.page-navigation a{
+	display: block;
+	padding: 14px 18px;
+	
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	
+	-webkit-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
+	-moz-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
+	-o-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
+	box-shadow: 2px 2px 0px rgba(0,0,0,.2);
+	
+	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.8);
+}
+
+.page-navigation .nav-next{
+	float: left;
+}
+
+.page-navigation .nav-previous{
+	float: right;
+}
+
+/* PAGER ------------------------------------------------------------*/
+
+.pager{
+	overflow: hidden;
+	display: block;
+	font-size: 11px;
+	margin: 0px 0px 0px 0px;
+	padding-bottom: 70px;
+}
+
+.pager li{
+	display: block;
+	margin-right: 5px;
+	float: left;
+}
+
+.pager li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-decoration: none;
+	width: 20px;
+	border: 1px solid #ccc;
+	line-height: 20px;
+	
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.pager .paged{
+	float:right;
+	font-style:italic;
+}
+
+
+/* homepic-HOLDER ------------------------------------------------------------*/
+
+#homepic-holder{
+	padding-bottom: 50px;
+}
+
+.home-homepic{
+	float: left;
+}
+
+#homepic-holder #headline{
+	position: relative;
+	float: right;
+	width: 260px; /* 300 - 40 padding */
+	min-height: 360px;
+	margin-top: -58px;
+	padding: 70px 20px 20px 20px;;
+	
+	-webkit-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
+	-moz-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
+	-o-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
+	box-shadow: 2px 2px 0px rgba(0,0,0,.2);
+	
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.8);
+}
+
+#headline h1{ 
+	margin-bottom: 30px;
+	line-height: 1.0em;
+}
+
+
+#headline em#corner,
+#sidebar em#corner{
+	display: block;
+	position: absolute;
+	top:0px;
+	left: -14px;
+	width: 14px;
+	height: 18px;	
+	background: url(../img/sidebar-corner.png) no-repeat;
+}
+
+
+.project-heading{
+	margin: 44px 24px 44px 0px;
+}
+
+
+.project-heading h2{
+	float: left;
+	margin-right: 20px;
+}
+
+.page-heading {
+	text-align: center;
+	margin: 44px 24px 44px 0px;
+}
+
+
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+
+
+
+
+
+#comboNav {
+  display: none;
+}
+
+.wrapper {
+	width: 940px;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+
+
+ 
+
+ {
+	
+	
+	#nav {
+		display: block;
+	}
+	
+	#comboNav {
+		display: none;
+	}
+	
+	.wrapper {
+		width: 712px;
+	}
+	
+	
+	/* homepic */
+	
+	.home-homepic{
+		width: 712px;
+	}
+	
+	.home-homepic-clearfix {
+		clear: both;
+	}
+	
+	/* headline */
+	
+	#homepic-holder #headline{
+		float:none;
+		width: 672px; /* 712 - 40 */
+		padding: 50px 20px 20px 20px;
+		margin-top: 0px;
+		min-height: 100px;
+		border-top: 1px solid #ccc;
+	}
+	
+	#headline em#corner{
+		display: none;
+	}
+	
+	
+	
+	/* home blocks */
+	
+	.one-third-thumbs figure { width: 224px; }
+	
+	.one-fourth-thumbs figure{ 
+		width: 160px;
+		margin-right: 24px;
+	}
+		
+	.home-block figcaption em,
+	.home-block figcaption span{
+		display: none;
+	}
+	
+	
+	
+	
+	
+}
+
+
+
+/*** ESSENTIAL STYLES ***/
+
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+
+
+
+/* GENERAL ------------------------------------------------------------*/
+
+body{
+	color: #888;
+}
+
+body,
+.home-block-heading span,
+.page-heading span{
+	background: #ebebe8;
+}
+
+body a{ color: #444; }
+
+body a:hover,
+#top-widget-holder a:hover,
+#nav>li>a:hover,
+.project-heading .launch:hover{
+	color: #ea4c88;
+}
+
+h1,h2,h3,h4,h5,h6{ color: #444444; }
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: #ea4c88; color: #fff; }
+::-moz-selection 	{background: #ea4c88; color: #fff; }
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: #ea4c88;}
+
+/* HEADER ------------------------------------------------------------*/
+
+header{ background: #e5a2c3 url(../img/header.png) bottom left repeat-x; }
+
+
+
+
+
+/* NAVIGATION ------------------------------------------------------------*/
+
+nav a{ color: #E2E0D7; }
+
+#nav>li.current-menu-item>a,
+#nav>li.current_page_item>a{
+	color: #E2E0D7;
+}
+
+/* sub navigation -----------------------------------------------------*/
+
+#nav>li ul{ background: #2f2f2f; }
+
+#nav>li ul li a{ color: #717171; }
+
+#nav>li ul li a:hover,
+#nav>li ul li:nth-child(even) a:hover{
+	background: #ea4c88;
+	color: #fff;
+}
+
+#nav>li ul li:nth-child(even) a{
+	background: #333333;
+}
+
+
+
+
+
+
+
+
+
+/* HOME ------------------------------------------------------------*/
+
+.home-block figcaption{
+	background: #ea4c88;
+	color: #f1f1f1;
+}
+
+/* PAGE NAVIGATION ------------------------------------------------------------*/
+
+.page-navigation a{
+	background: #444 url(../img/noise.png) repeat;
+	color: #f1f1f1;
+}
+
+.page-navigation a:hover{
+	background: #ea4c88;
+	color: #fff;
+}
+
+/* PAGER ------------------------------------------------------------*/
+
+.pager li a{ color: #444; }
+
+.pager li:hover a{
+	color: #fff;
+	background: #ea4c88;
+}
+
+.pager li.active a{ 
+	background: #444;
+	color: #fff;
+}
+
+/* homepic ------------------------------------------------------------*/
+
+#homepic-holder #headline{ background: #e2e0d7; }
+
+
+
+
+
+
+
+
+
+
+
