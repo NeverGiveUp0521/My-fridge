@@ -337,8 +337,33 @@ color:white;
 	width:600px;
 	height:400px;
 	border-radius: 10px;
-	align:center;
+	
 }  
+
+
+/* INVENTORY ------------------------------------------------------------*/
+
+.table-bordered {
+  border: 1px solid #ddd;
+  width: 75em;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
+.tableposition{
+	align-content: center;
+	float: center;
+}
 
 
 
@@ -425,7 +450,7 @@ color:white;
 }
 
 #homepic-holder #headline{
-	position: relative;
+	position: relacentive;
 	float: right;
 	width: 260px; /* 300 - 40 padding */
 	min-height: 360px;
@@ -586,9 +611,7 @@ a img {border: 0;}
 	padding:		0;
 	list-style:		none;
 }
-.sf-menu {
-	
-}
+
 .sf-menu ul {
 	position:		absolute;
 	top:			-999em;
@@ -654,18 +677,18 @@ body a:hover,
 #top-widget-holder a:hover,
 #nav>li>a:hover,
 .project-heading .launch:hover{
-	color: #ea4c88;
+	color: #e87da6;
 }
 
 h1,h2,h3,h4,h5,h6{ color: #444444; }
 
 /* Selection colours (easy to forget) */
 
-::selection 	 	{background: #ea4c88; color: #fff; }
-::-moz-selection 	{background: #ea4c88; color: #fff; }
+::selection 	 	{background: #e87da6; color: #fff; }
+::-moz-selection 	{background: #e87da6; color: #fff; }
 img::selection 		{background: transparent;}
 img::-moz-selection	{background: transparent;}
-body {-webkit-tap-highlight-color: #ea4c88;}
+body {-webkit-tap-highlight-color: #e87da6;}
 
 /* HEADER ------------------------------------------------------------*/
 
@@ -692,7 +715,7 @@ nav a{ color: #E2E0D7; }
 
 #nav>li ul li a:hover,
 #nav>li ul li:nth-child(even) a:hover{
-	background: #ea4c88;
+	background: #e87da6;
 	color: #fff;
 }
 
@@ -711,7 +734,7 @@ nav a{ color: #E2E0D7; }
 /* HOME ------------------------------------------------------------*/
 
 .home-block figcaption{
-	background: #ea4c88;
+	background: #e87da6;
 	color: #f1f1f1;
 }
 
@@ -723,7 +746,7 @@ nav a{ color: #E2E0D7; }
 }
 
 .page-navigation a:hover{
-	background: #ea4c88;
+	background: #e87da6;
 	color: #fff;
 }
 
@@ -733,7 +756,7 @@ nav a{ color: #E2E0D7; }
 
 .pager li:hover a{
 	color: #fff;
-	background: #ea4c88;
+	background: #e87da6;
 }
 
 .pager li.active a{ 
@@ -749,9 +772,116 @@ nav a{ color: #E2E0D7; }
 
 
 
+ * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0
+            }
+            
+            ul,
+            li {
+                list-style: none;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            a:hover {
+                cursor: pointer;
+                text-decoration: none;
+            }
+            
+            a:link {
+                text-decoration: none;
+            }
+            
+            img {
+                vertical-align: middle;
+            }
+            
+            .btn-numbox {
+                overflow: hidden;
+                margin-top: 20px;
+            }
+            
+            .btn-numbox li {
+                float: left;
+            }
+            
+            .btn-numbox li .number,
+            .kucun {
+                display: inline-block;
+                font-size: 12px;
+                color: #808080;
+                vertical-align: sub;
+            }
+            
+            .btn-numbox .count {
+                overflow: hidden;
+                margin: 0 16px 0 40px;
+            }
+            
+            .btn-numbox .count .num-jian,
+            .quantity,
+            .num-jia {
+                display: inline-block;
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                font-size: 18px;
+                color: #999;
+                cursor: pointer;
+                border: 1px solid #e6e6e6;
+            }
+            
+            .btn-numbox .count .num-jia {
+                margin-left: 1px;
+            }
+            
+            .btn-numbox .count .quantity {
+                width: 58px;
+                height: 28px;
+                color: #333;
+                border-left: 0;
+                border-right: 0;
+            }
+
+			.row button {
+				float: right;
+  position: relative;
+  width: 23%;
+  display: block;
+  margin: 1%;
+  padding: 12px;
+  font-size: 1em;
+  font-family:  'Helvetica Neue LT Pro', 'Helvetica', sans-serif;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0px 1px 1px 0px;
+  border-radius: 8px;
+  color: #333333;
+  cursor: pointer;
+  background-clip: padding-box;
+  background: #c4c8ce;
+  
+ 
+	
+	border-top: 1px solid #eda8c2;  
+box-shadow:-2px 0 1px #efb3ca inset;  
+background:-webkit-linear-gradient(right,#e87da6,#e87da6 60%);  
+background:-moz-linear-gradient(right,#e87da6,#e87da6 60%);  
+background:linear-gradient(right,#e87da6,#e87da6 60%);   
+	
+
+	
+  
+}
 
 
-
-
-
-
+.row button:hover,.row button.hovering {
+  border-width: 1px 0px 0px 1px;
+  opacity: 0.8;
+}
