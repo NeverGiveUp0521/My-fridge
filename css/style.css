@@ -56,7 +56,7 @@ body a{
 
 #logo{
 	display: inline-block;
-	height: 50px;
+	height: 100px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
@@ -451,7 +451,7 @@ color:white;
 }
 
 #homepic-holder #headline{
-	position: relacentive;
+	position: relative;
 	float: right;
 	width: 260px; /* 300 - 40 padding */
 	min-height: 360px;
