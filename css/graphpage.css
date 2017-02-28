@@ -1,0 +1,58 @@
+#hi {
+}
+
+
+#graph {
+}
+
+#container1 {
+    margin-left:auto;
+  margin-right:auto;
+	width: 150vh;
+  overflow:auto;
+}
+
+
+#container2 {
+  margin-left:auto;
+  margin-right:auto;
+  width: 90vh;
+  overflow: auto;
+}
+
+#less{
+  background-color:#D6D6D6;
+  color:black; 
+  text-align:center; 
+  font-size: 3vh;
+  font-family: "arial";
+  height: 5vh;
+  width: 10vh;
+  margin: 1vh 1vh;
+  transition: all 0.3s ease 0s; 
+  border-radius: 4vh;
+  box-shadow: 1.5vh 1.5vh 1.5vh #595959; 
+}
+
+#more{
+  background-color:#D6D6D6;
+  color:black; 
+  text-align:center; 
+  font-size: 3vh;
+  font-family: "arial";
+  height: 5vh;
+  width: 10vh;
+  margin: 1vh 1vh;
+  transition: all 0.3s ease 0s; 
+  border-radius: 4vh;
+  box-shadow: 1.5vh 1.5vh 1.5vh #595959; 
+
+}
+
+#dietchangers {
+  margin-left:auto;
+  margin-right:auto;
+	padding-left: 41em;
+
+}
+
