@@ -134,7 +134,7 @@ $(document).ready(function(){
 		options: {
 			title: {
 				display: true,
-				//fontSize: 18em,
+				//fontSize: 18;
 				text: 'Percentage Completion',
 			},
 
